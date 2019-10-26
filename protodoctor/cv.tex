@@ -1,0 +1,255 @@
+\documentclass[letterpaper,11pt]{article}
+
+
+ \usepackage{setspace,array,
+  amsmath,apjfonts,amsfonts,amssymb,enumerate,graphicx,
+  longtable,float,times,textcomp,verbatim,url,nicefrac,
+  currvita, tabularx, lipsum,enumitem, paralist,xcolor ,hyperref}
+
+%page info
+\setlength{\textwidth}{6.5in} 
+\setlength{\textheight}{9.4in}
+\setlength{\topmargin}{-0.7in} 
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in} 
+
+%get two columns
+\newcolumntype{L}{>{\raggedright}p{0.15\textwidth}}
+\newcolumntype{R}{p{0.85\textwidth}}
+
+%counters
+\newcounter{pubs}
+\newcounter{invites}
+\newcounter{confs}
+
+%pub entry
+\newcommand{\publication}[1]{ {\raggedright\stepcounter{pubs}\thepubs.\,\,#1}}
+
+%contirubted talk
+\newcommand{\talk}[1]{ {\raggedright\stepcounter{confs}\theconfs.\,\,\textbf{Contributed talk.}\,\,#1}}
+
+%journals
+\newcommand{\apj}{\textit{Astrophysical Journal}}
+\newcommand{\pasp}{\textit{Publications of the Astronomical Society of the Pacific}}
+\newcommand{\mnras}{\textit{Monthly Notices of the Royal Astronomical Society}}
+
+%make the links nice
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+
+%header
+%\pagestyle{myheadings}
+%\markright{ CV -- M. M. Fausnaugh}
+%\pagenumbering{arabic}
+
+
+\begin{document}
+
+\begin{center}
+\huge\bfseries{Michael M. Fausnaugh}
+\end{center}
+
+\noindent OSU Dept of Astronomy \hfill Office: (614) 292 7881 \\
+140 West 18th Avenue  \hfill fausnaugh@astronomy.ohio-state.edu \\
+Columbus, OH 43201    \hfill  www.astronomy.ohio-state.edu/\textasciitilde fausnaugh
+
+%\vspace{2em}
+%{\raggedright
+%\lipsum[100]}
+%
+%\vspace{2em}
+%\lipsum[100]
+
+\vspace{2em}
+\begin{longtable}{LR}
+
+\underline{\textbf{Education}} &     
+
+\textbf{The Ohio State University,} Columbus, OH\\
+2012--2017   &    Advisor:  Prof. Bradley Peterson\\
+&Ph.D., Astronomy, Summer 2017 (expected)\\
+&    M.S.,  Astronomy, December 2014\\
+&    Honors/awards:
+\begin{compactitem}
+\item Presidential Fellow, 2016-2017
+\end{compactitem}
+
+\\
+
+&\textbf{Adler Planetarium,} Chicago, IL\\
+2011--2012&    $\gamma$-ray Astronomy Research Assistant, VERITAS Telescope Array\\
+&  ARIEL Internship, awarded and funded by St. John's College \\
+
+\\
+&\textbf{St. John's College,} Santa Fe, NM\\
+2007--2011&B.A., History of Math and Science, Philosophy,  May 2011\\
+&Honors/awards: 
+\begin{compactitem} 
+\item Sustained Academic Excellence, May 2011
+\item  ARIEL Internship, Summer 2011
+\end{compactitem}
+\\
+
+
+
+
+\underline{\textbf{Publications}}   \textbf{First Author} 
+&\publication{``Continuum Reverberation Mapping of the Accretion Disk in Two Seyfert 1  Galaxies''\\
+\textbf{M.~M.~Fausnaugh} et al. (71 authors), distributed to co-authors for final comments 2016 Oct.~28.  Private preprint:  www.astronomy.ohio-state.edu/\textasciitilde fausnaugh/RMdisks}\\
+\\
+&\publication{``Reverberation Mapping of Optical Emission Lines in Five Active Galaxies''\\
+\textbf{M.~M.~Fausnaugh} et al. (71 authors), submitted to \apj\ 2016 Oct.~1, arXiv:1610.00008 (2016).}\\
+\\
+&\publication{``A New Approach to the Internal Calibration of Reverberation Mapping Spectra''\\
+\textbf{M.~M.~Fausnaugh}, accepted to \pasp\ 2016 Oct.~11, arXiv:1609.04014 (2016).}\\
+\\
+&\publication{``Space Telescope and Optical Reverberation Mapping Project. III. Optical Continuum Emission and Broad-Band Time Delays in NGC 5548''\\
+\textbf{M.~M.~Fausnaugh} et al. (99 authors), \apj, 821:56 (2016).}\\
+\\
+& \publication{``The Cepheid distance to the maser-host galaxy NGC 4258: studying systematics with the Large Binocular Telescope''\\
+\textbf{M.~M.~Fausnaugh}, C.~S.~Kochanek,  J.~R.~Gerke, L.~M.~Macri, A.~G.~Riess, K.~Z.~Stanek, \mnras, 450:3597 (2015).}\\
+\\
+
+
+\textbf{Major Contributing Author}
+&\publication{``Space Telescope and Optical Reverberation Mapping Project. V. Optical Spectroscopic Campaign and Emission-Line Analysis for NGC 5548'',
+  L.~Pei, \textbf{M.~M.~Fausnaugh}, and 152 others, submitted to \apj\ 2016 Oct. 21.}\\
+\\
+&\publication{``Swift Monitoring of NGC 4151: Evidence for a Second X-ray/UV Reprocessing'',
+R.~Edelson, J.~Gelbord, E.~Cackett, C.~Done, \textbf{M.~M.~Fausnaugh}, and 37 others, submitted to \apj\ 2016 Oct. 20.}\\
+\\
+&\publication{``Spitzer Space Telescope Measurements of Dust Reverberation Lags in the Seyfert 1 Galaxy NGC 6418'', 
+  B.~Vazquez, P.~Galianni, M.~Richmond, A.~Robinson, D.~J.~Axon, K.~Horne, T.~Almeyda, \textbf{M.~M.~Fausnaugh}, and 18 others, \apj, 801:127 (2015).}\\
+\\
+
+
+\textbf{Contributing Author}
+&\publication{``Space Telescope and Optical Reverberation Mapping Project. VI. Reverberating Disk Models for NGC\,5548'',
+  D.~Starkey, K.~Horne, \textbf{M.~M.~Fausnaugh}, and 96 others, submitted to \apj\ 2016 Sept. 30.}\\
+\\
+&\publication{``Space Telescope and Optical Reverberation Mapping Project. IV. Anomalous behavior of the broad ultraviolet emission lines in NGC 5548'', 
+M.~R.~Goad et al. (102 authors, including \textbf{M.~M.~Fausnaugh}), \apj, 824:11 (2016).}\\
+\\
+&\publication{``Space Telescope and Optical Reverberation Mapping Project. II. Swift and HST Reverberation Mapping of the Accretion Disk of NGC 5548'',
+R.~Edelson et al. (50 authors, including \textbf{M.~M.~Fausnaugh}), \apj, 806:129 (2015).}\\
+\\    
+&\publication{``Space Telescope and Optical Reverberation Mapping Project. I. Ultraviolet Observations of the  Seyfert 1 Galaxy NGC 5548 with the Cosmic Origins Spectrograph on Hubble Space Telescope'',
+G.~ De~Rosa et al. (50 authors, including \textbf{M.~M.~Fausnaugh}), \apj, 806:128 (2015).}\\
+\\
+&\publication{``Swift/UVOT Grism Monitoring of NGC 5548 in 2013: An Attempt at MgII 
+  Reverberation Mapping'',  E.~M.~Cackett, K.~G\"ultekin, M.~C.~Bentz, \textbf{M.~M.~Fausnaugh}, B.~M.~Peterson, J.~Troyer, M.~Vestergaard, \apj, 810:86 (2015).}\\
+\\
+&\publication{``OGLE-2015-BLG-0479LA,B: Binary Gravitational Microlens Characterized by Simultaneous Ground-based and Space-based Observations'', 
+C.~Han et al. (63 authors, including \textbf{M.~M.~Fausnaugh}), \apj, 828:53 (2016).}\\
+\\
+&\publication{``First simultaneous microlensing observations by two space telescopes: Spitzer \& Swift reveal a brown dwarf in event OGLE-2016-BLG-1319'', 
+Y.~Shvartzvald et al. (including \textbf{M.~M.~Fausnaugh}, submitted to \apj), arXiv:1606.02292 (2016).}\\
+\\
+&\publication{``The Spitzer Microlensing Program as a Probe for Globular Cluster Planets:  Analysis of OGLE-2015-BLG-0448'', 
+P.~Radoslaw et al. (92 authors, including \textbf{M.~M.~Fausnaugh}), \apj, 823:63 (2016).}\\
+\\
+&\publication{``Spitzer Observations of OGLE-2015-BLG-1212 Reveal a New Path to Breaking Strong Microlens Degeneracies'',  
+V.~Bozza et al. (92 authors, including \textbf{M.~M.~Fausnaugh}), \apj, 820:79 (2016).}\\
+\\
+&\publication{``Spitzer Microlens Measurement of a Massive Remnant in a Well-Separated Binary'',
+Y.~ Shvartzvald et al. (66 authors, including \textbf{M.~M.~Fausnaugh}), \apj, 814:111 (2015).}\\
+\\
+&\publication{``Spitzer IRAC Photometry for Time Series in Crowded Fields'', 
+S.~ Calchi~ Novati et al. (25 authors, including \textbf{M.~M.~Fausnaugh}), \apj, 814:92 (2015).}\\
+\\
+&\publication{``The Typecasting of Active Galactic Nuclei: Mrk 590 no Longer Fits the Role'',
+K.~D.~Denney et al. (12 authors, including \textbf{M.~M.~Fausnaugh}), \apj, 796:134 (2014).}\\
+\\
+&\publication{``SN 2012au: A Golden Link between Superluminous Supernovae and Their Lower-luminosity Counterparts'',
+D.~Milisavlejic et al. (29 authors, including \textbf{M.~M.~Fausnaugh}), \apj, 770:L38 (2013).}\\
+\\
+
+
+\textbf{Minor Publications}& \stepcounter{pubs}\thepubs--\addtocounter{pubs}{6}\thepubs.\,\,Seven \textit{Astronomer's Telegrams} with the ASAS-SN research group (\#5102, \#5110, \#6143, \#6158, \#8352,\#8356, \#9146, unrefereed, 2013--2016).\\
+\\
+&\publication{``AGN Space Telescope and Optical Reverberation Mapping Project II. Ultraviolet and Optical Continuum Analysis'',  
+\textbf{M.~M.~Fausnaugh}, Meeting of the American Astronomical Society \#225 (2015).}\\
+\\
+
+
+
+
+\underline{\textbf{Invited}}\\ \underline{\textbf{Seminars}} &\stepcounter{invites}\theinvites.\,\,(Upcoming, 2016 November 29)
+``Reverberation Mapping of AGN Accretion Disks''.
+Galaxy and Cosmology Seminar, Institute for Theory and Computation, 
+Harvard-Smithsonian Center for Astrophysics. Cambridge, Massachusetts.\\
+\\
+
+
+
+
+\underline{\textbf{Presentations/}}\\\underline{\textbf{Conferences}} & \stepcounter{confs}\theconfs.\,\,2016 July. AGN STORM Workshop. Reykjavik, Iceland.\\
+&\talk{2016 June 21: Center for Cosmology and Astroparticle Physics Seminar Series, The Ohio State University. Columbus, Ohio.}\\
+\\
+&\talk{2016 May 2: Great Lakes Quasar Symposium, Western University. London, Ontario.}\\
+\\
+&\talk{2016 April 11: Accretion Disk Research Group Meeting, Harvard-Smithsonian Center for Astrophysics. Cambridge, Massachusetts.}\\
+\\
+&\talk{2016 April 1: Quasar Research Group Meeting,  Harvard-Smithsonian Center for Astrophysics. Cambridge, Massachusetts.}\\
+\\
+&\talk{2016 March 25: AGN Research Group Meeting.  Space Telescope and Science Institute. Baltimore, Maryland.}\\
+\\
+&\talk{2015 July: AGN STORM Workshop.  Columbus, Ohio.}\\
+\\
+&\talk{2015 January: Meeting of the American Astronomical Society \#225. Seattle, Washington.}\\
+\\
+&\stepcounter{confs}\theconfs.\,\,2014 July:  AGN Research Retreat.  University of St. Andrews.  St. Andrews, Scotland.\\
+\\
+&\talk{2014 May: Catolica Workshop.  The Ohio State University. Columbus, Ohio.}\\
+\\
+&\stepcounter{confs}\theconfs.\,\,2013 July:  Spitz Summer Institute, planetarium workshop/training. Spitz Inc. Chadds Ford, Pennsylvania, 2013 July.\\
+\\
+
+
+\underline{\textbf{Observing}}\\\underline{\textbf{Experience}} &  
+\begin{tabular}[t]{lrl}
+Total:&                                        113 nights& (75 queue, 38 classical)\\
+Large Binocular Telescope:&       48 nights& 2013-2016\\
+MDM 2.4m Hiltner:&                   24 nights& 2012-2015\\
+MDM 1.3m McGraw: &               18 nights& 2013-2014\\
+CTIO SMARTS 1.3m: &              16 nights& 2015\\
+VERITAS ($\gamma$-ray observatory): &   7 nights& 2011   \\ 
+\end{tabular}\\
+\\
+
+
+\underline{\textbf{Teaching}}\\\underline{\textbf{Experience}} &  
+\textbf{Graduate Teaching Associate:}  Graded exams, designed/hosted review sessions.
+\begin{compactitem}
+\item Autumn 2012, Astro 2291:  Introduction to Astronomy and Planets (Calculus-based, for astronomy majors)
+\item Spring   2013, Astro 1161:  Introduction to Astronomy and the Solar System
+\end{compactitem}\\
+\\
+
+
+
+\underline{\textbf{Selected}}\\\underline{\textbf{Outreach}} 
+&\textbf{OSU Planetarium:} Developed/wrote all or part the following shows:
+\begin{compactitem}
+\item 2013:  \textit{OSU Planetarium Grand Reopening, The Sky Tonight.}
+\item 2014:  \textit{Journey through the Solar System.}
+\item 2015:  \textit{The Autumn Sky:  Hidden Treasures.}
+\end{compactitem}
+
+\noindent Presented 2-4 planetarium shows per month (Over 100 shows from 2013-2016).\\
+&Wickliffe Elementary Space Day (2013 January 18)\\
+&Bailey Elementary Astronomy mini-course (2013 March 15)\\
+&4-H Science Saturday (2013 April 6)\\
+&Blendon Middle School Career Day (2013 May 14)\\
+&Hosted a high school student for 1 day (2014 May 28)\\
+&Upper Arlington Library Summer Astronomy Series (June 2014, 2015, 2016)\\
+
+\end{longtable}
+
+\end{document}
