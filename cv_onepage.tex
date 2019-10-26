@@ -1,0 +1,147 @@
+\documentclass[letterpaper,11pt]{article}
+
+
+ \usepackage{setspace,array,
+  amsmath,apjfonts,amsfonts,amssymb,enumerate,graphicx,
+  longtable,float,times,textcomp,verbatim,url,nicefrac,
+  currvita, tabularx, lipsum,enumitem, paralist,xcolor ,hyperref}
+
+%page info
+\setlength{\textwidth}{6.5in} 
+\setlength{\textheight}{9.4in}
+\setlength{\topmargin}{-0.7in} 
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in} 
+
+%get two columns
+\newcolumntype{L}{>{\raggedright}p{0.15\textwidth}}
+\newcolumntype{R}{p{0.85\textwidth}}
+
+%counters
+\newcounter{pubs}
+\newcounter{invites}
+\newcounter{confs}
+
+%pub entry
+\newcommand{\publication}[1]{ {\raggedright\stepcounter{pubs}\thepubs.\,\,#1}}
+
+%contirubted talk
+\newcommand{\talk}[1]{ {\raggedright\stepcounter{confs}\theconfs.\,\,\textbf{Contributed talk.}\,\,#1}}
+
+%journals
+\newcommand{\apj}{\textit{Astrophysical Journal}}
+\newcommand{\pasp}{\textit{Publications of the Astronomical Society of the Pacific}}
+\newcommand{\mnras}{\textit{Monthly Notices of the Royal Astronomical Society}}
+
+%make the links nice
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+
+%header
+%\pagestyle{myheadings}
+%\markright{ CV -- M. M. Fausnaugh}
+%\pagenumbering{arabic}
+
+
+\begin{document}
+
+\begin{center}
+\huge\bfseries{Michael M. Fausnaugh}
+\end{center}
+
+\noindent OSU Dept of Astronomy \hfill Office: (614) 292 7881 \\
+140 West 18th Avenue  \hfill fausnaugh@astronomy.ohio-state.edu \\
+Columbus, OH 43201    \hfill  www.astronomy.ohio-state.edu/\textasciitilde fausnaugh
+
+%\vspace{2em}
+%{\raggedright
+%\lipsum[100]}
+%
+%\vspace{2em}
+%\lipsum[100]
+
+\vspace{2em}
+\begin{longtable}{LR}
+
+\underline{\textbf{Education}} &     
+
+\textbf{The Ohio State University,} Columbus, OH\\
+2012--2017   &    Advisor:  Prof. Bradley Peterson\\
+&Ph.D., Astronomy, Summer 2017 (expected)\\
+&    M.S.,  Astronomy, December 2014\\
+&    Honors/awards:
+\begin{compactitem}
+\item Presidential Fellow, 2016-2017
+\end{compactitem}
+
+\\
+
+&\textbf{Adler Planetarium,} Chicago, IL\\
+2011--2012&    $\gamma$-ray Astronomy Research Assistant, VERITAS Telescope Array\\
+&  ARIEL Internship, awarded and funded by St. John's College \\
+
+\\
+&\textbf{St. John's College,} Santa Fe, NM\\
+2007--2011&B.A., History of Math and Science, Philosophy,  May 2011\\
+&Honors/awards: 
+\begin{compactitem} 
+\item Sustained Academic Excellence, May 2011
+\item  ARIEL Internship, Summer 2011
+\end{compactitem}
+\\
+
+
+
+
+\underline{\textbf{Publications}}
+&  \textbf{Four first-author} papers accepted or submitted (32 citations), a fifth  distributed to co-authors (expected submission late
+  2016).  21 papers total (201 citations).\\
+\\
+
+\underline{\textbf{Invited}}\\ \underline{\textbf{Seminars}} &\stepcounter{invites}\theinvites.\,\,(\textit{Upcoming,} 2016 November 29)
+Galaxy and Cosmology Seminar, ITC, 
+Harvard-Smithsonian Center for Astrophysics. Cambridge, Massachusetts.\\
+\\
+
+
+
+
+\underline{\textbf{Presentations/}}& 8 contributed talks at conferences or as a visiting researcher\\
+\underline{\textbf{Conferences}}   & 7 scientific/educational conferences in North America and Europe\\
+& Over 100 educational presentations (see Outreach Activities)\\
+\\
+
+\underline{\textbf{Observing}}\\\underline{\textbf{Experience}} &  
+\begin{tabular}[t]{lrl}
+Total:&                                        113 nights& (75 queue, 38 classical)\\
+Large Binocular Telescope:&       48 nights& 2013-2016\\
+MDM 2.4m Hiltner:&                   24 nights& 2012-2015\\
+MDM 1.3m McGraw: &               18 nights& 2013-2014\\
+CTIO SMARTS 1.3m: &              16 nights& 2015\\
+VERITAS ($\gamma$-ray observatory): &   7 nights& 2011   \\ 
+\end{tabular}\\
+\\
+
+
+\underline{\textbf{Teaching}} &  \textbf{Graduate Teaching Associate:}  Graded exams, designed/hosted review sessions.\\
+\underline{\textbf{Experience}}&
+\begin{tabular}[t]{rll}
+ Autumn 2012& Astro 2291 &(Intro to Astronomy and Planets, calculus-based)\\
+ Spring 2013& Astro 1161& (Intro to Astronomy and the Solar System).
+\end{tabular}\\
+\\
+
+
+
+\underline{\textbf{Outreach}}\\\underline{\textbf{Activities}} 
+&\textbf{Community:} Regular contact for astronomy events with local libraries, public schools, and summer camps (2012-2016)\\
+&\textbf{OSU Planetarium:} Developed/wrote 4 core planetarium shows, presented 2--4 planetarium shows per month, total of over 100 shows (2013-2016)
+\end{longtable}
+
+\end{document}
