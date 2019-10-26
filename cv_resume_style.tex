@@ -1,21 +1,27 @@
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,12pt]{article}
 
 
  \usepackage{setspace,array,
   amsmath,apjfonts,amsfonts,amssymb,enumerate,graphicx,
   longtable,float,times,textcomp,verbatim,url,nicefrac,
-  currvita, tabularx, lipsum,enumitem, paralist,xcolor ,hyperref}
+  currvita, tabularx, lipsum,enumitem,xcolor ,hyperref}
 
 %page info
-\setlength{\textwidth}{7.2in} 
+\setlength{\textwidth}{7.0in} 
 \setlength{\textheight}{9.in}
 \setlength{\topmargin}{-0.50in} 
-\setlength{\oddsidemargin}{-0.35in}
-\setlength{\evensidemargin}{0.35in} 
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{0.25in} 
 
 %get two columns
 \newcolumntype{L}{>{\raggedright}p{0.14\textwidth}}
 \newcolumntype{R}{p{0.81\textwidth}}
+
+\newcolumntype{A}{ >{\raggedleft}p{0.03\textwidth}}
+\newcolumntype{a}{p{0.70\textwidth}}
+\newcolumntype{b}{ >{\raggedleft}p{0.2\textwidth}}
+
+
 \newcolumntype{z}{p{1.0\textwidth}}
 \newcommand\Tstrut{\rule{0pt}{2.6ex}}       % top strut
 \newcommand\Bstrut{\rule[-1.1ex]{0pt}{0pt}} % bottom strut\
@@ -29,7 +35,23 @@
 \newcommand{\publication}[1]{ {\raggedright\stepcounter{pubs}\thepubs.\,\,#1\\}}
 
 %contirubted talk
-\newcommand{\talk}[1]{ {\raggedright\stepcounter{confs}\theconfs.\,\,\textbf{Contributed talk.}\,\,#1\\}}
+\newcommand{\talk}[2]{ \begin{tabular}{Aab} \stepcounter{confs}\theconfs.  &#1&#2 \end{tabular} }
+\newcommand{\invite}[2]{ \begin{tabular}{Aab} \stepcounter{invites}\theinvites.  &#1&#2 \end{tabular}}
+
+\newcommand{\gradstudent}[3]{\begin{tabular}{
+>{\raggedright}p{0.18\textwidth}
+>{\raggedright}p{0.46\textwidth}
+>{\raggedleft}p{0.1\textwidth}} #1&#2&#3\end{tabular} }
+\newcommand{\student}[2]{\begin{tabular}{>{\raggedright}p{0.57\textwidth}>{\raggedleft}p{0.2\textwidth}} #1&#2\end{tabular}}
+
+%\newcommand{\talk}[2]{ \begin{tabular}{ab} #1 &#2 \end{tabular} }
+
+%compact lists
+\newlist{compactenum}{enumerate}{4}
+\setlist[compactenum,1]{nolistsep,label=\arabic}
+%compact lists
+\newlist{compactitem}{itemize}{4}
+\setlist[compactitem,1]{nolistsep, label=\textbullet}
 
 %journals
 \newcommand{\apj}{\textit{Astrophysical Journal}}
@@ -87,7 +109,7 @@ Cambridge, MA 02139 \hfill space.mit.edu/\textasciitilde faus/
   2013--2016 & Graduate Research Assistant \\
   2012--2013 & Graduate Teaching Assistant \\
   &\textbf{Adler Planetarium,} Chicago, OH\\
-  2011--2012 & $\gamma$-ray Astronomy Research Assistant, VERITAS Telescope Array\\
+  2011--2012 & Research Assistant, VERITAS Telescope Array\\
   &  ARIEL Internship, awarded and funded by St. John's College \\
   \\
   
@@ -126,52 +148,69 @@ Observational astronomy    &  Image processing                  &  \phantom{a}ba
 Data analysis methods      &  Time series analysis              &  Working knowledge \\         
                            &  Software design, implementation,  &  \phantom{aa}of c++, fortran, perl \\
                            &    \phantom{a} and management      &                                  
-\end{tabular}
-\end{longtable}
-
-\begin{longtable}{z}
-\underline{\smash{\textbf{Invited Seminars}}}  \\
-{\raggedright \stepcounter{invites}\theinvites.\,\,2019 April 18, 
-"One Year for TESS:  The Science, Early Findings, and Future Ahead".
-Lunch and Learn Seminar, Northrop Grumman Innovation Systems, Sterling, VA.}\\
-{\raggedright \stepcounter{invites}\theinvites.\,\,2016 November 29,
-``Reverberation Mapping of AGN Accretion Disks''.
-Galaxy and Cosmology Seminar, Institute for Theory and Computation, 
-Harvard-Smithsonian Center for Astrophysics. Cambridge, Massachusetts.}
-\\
-\\
-\underline{\textbf{Presentations and Conferences}} \\
-\talk{2017 March 3: Hayes Research Forum. The Ohio State University. Columbus, Ohio.}
-\talk{2017 February 27: AGN Research Group Meeting.  Space Telescope and Science Institute. Baltimore, Maryland.}
-\talk{2017 January 11: MIT Kavli Institute Research Lunch. Cambridge, Massachusetts.}
-\talk{2017 January 7: Meeting of the American Astronomical Society \#229. Grapevine, Texas.}
-\stepcounter{confs}\theconfs.\,\,2016 July. AGN STORM Workshop. Reykjavik, Iceland.\\
-\talk{2016 June 21: Center for Cosmology and Astroparticle Physics Seminar Series, The Ohio State University. Columbus, Ohio.}
-\talk{2016 May 2: Great Lakes Quasar Symposium, Western University. London, Ontario.}
-\talk{2016 April 11: R. Narayan's Research Group Meeting, Harvard-Smithsonian Center for Astrophysics. Cambridge, Massachusetts.}
-\talk{2016 April 1: Quasar Research Group Meeting,  Harvard-Smithsonian Center for Astrophysics. Cambridge, Massachusetts.}
-\talk{2016 March 25: AGN Research Group Meeting.  Space Telescope and Science Institute. Baltimore, Maryland.}
-\talk{2015 July: AGN STORM Workshop.  Columbus, Ohio.}
-\talk{2015 January: Meeting of the American Astronomical Society \#225. Seattle, Washington.}
-\stepcounter{confs}\theconfs.\,\,2014 July:  AGN Research Retreat.  University of St. Andrews.  St. Andrews, Scotland.\\
-\talk{2014 May: Catolica Workshop.  The Ohio State University. Columbus, Ohio.}
-\stepcounter{confs}\theconfs.\,\,2013 July:  Spitz Summer Institute, planetarium workshop/training. Spitz Inc. Chadds Ford, Pennsylvania.\\
-\end{longtable}
-\begin{longtable}{LR}
-
-\underline{\smash{\textbf{Observing}}}\\\underline{\smash{\textbf{Experience}}} &  
-\begin{tabular}[t]{lrl}
-Total:&                                        119 nights& (81 queue, 38 classical)\\
-Large Binocular Telescope:&       54 nights& 2013-2016\\
-MDM 2.4m Hiltner:&                   24 nights& 2012-2015\\
-MDM 1.3m McGraw: &               18 nights& 2013-2014\\
-CTIO SMARTS 1.3m: &              16 nights& 2015\\
-VERITAS ($\gamma$-ray observatory): &   7 nights& 2011   \\ 
 \end{tabular}\\
+%\begin{longtable}{z}
+\underline{\smash{\textbf{Invited Seminars}}}&  \\
+%\begin{enumerate}[noitemsep,label=\arabic*.]
+%\begin{enumerate}
+%\item dadada
+%verbose version
+%\item 2019 April 18, "One Year for TESS:  The Science, Early Findings, and Future Ahead". \\
+%Lunch and Learn Seminar, Northrop Grumman Innovation Systems, Sterling, VA.
+%\item 2016 November 29,``Reverberation Mapping of AGN Accretion Disks'".\\
+ %Galaxy and Cosmology Seminar, Institute for Theory and Computation, Harvard-Smithsonian Center for Astrophysics. Cambridge, Massachusetts.
+\invite{Northrop Grumman Innovation Systems, Sterling, VA.}{April 2019}& \\
+\invite{Harvard-Smithsonian Center for Astrophysics. Cambridge, MA.}{Nov 2016}&\\
 \\
-
-\underline{\smash{\textbf{Teaching}}}  &  \textbf{Graduate Teaching Associate}, The Ohio State University:\\
-\underline{\smash{\textbf{Experience}}}&  Graded exams, designed/hosted review sessions.
+%\end{enumerate}
+\underline{\textbf{Presentations and Conferences}}& \\
+\talk{TESS Science Conference.  MIT.  Cambride, MA.}{Aug 2019}\\
+\talk{NERQUAM 2019.  MIT. Cambridge, MA.}{May 2019}\\
+\talk{Meeting of the American Astronomical Society \#233. Seattle, WA.}{Jan 2019}\\
+\talk{TESS Science Meeting. MIT. Cambridge, MA.}{Oct. 2018}\\
+\talk{Hayes Research Forum. The Ohio State University. Columbus, OH.}{March 2017}&\\
+\talk{AGN Research Group Meeting.  Space Telescope and Science Institute. Baltimore, MD.}{Feb 2017}&\\
+\talk{MIT Kavli Institute Research Lunch. Cambridge, MA.}{Jan 2017}&\\
+\talk{Meeting of the American Astronomical Society \#229. Grapevine, TX.}{Jan 2017}&\\
+\talk{AGN STORM Workshop. Reykjavik, Iceland.}{July 2016}&\\
+\talk{CCAP Summer Seminar Series, The Ohio State University. Columbus, OH.}{June 2016}&\\
+\talk{Great Lakes Quasar Symposium, Western University. London, Ontario.}{May 2016}&\\
+\talk{R. Narayan's Research Group Meeting, Harvard-Smithsonian Center for Astrophysics. Cambridge, MA.}{April 2016}&\\
+\talk{Quasar Research Group Meeting,  Harvard-Smithsonian Center for Astrophysics. Cambridge, MA.}{April 2016}&\\
+\talk{AGN Research Group Meeting.  Space Telescope and Science Institute. Baltimore, MD.}{March 2016}&\\
+\talk{AGN STORM Workshop.  Columbus, OH.}{July 2015}&\\
+\talk{Meeting of the American Astronomical Society \#225. Seattle, WA.}{Jan 2015}&\\
+\talk{AGN Research Retreat.  University of St. Andrews.  St. Andrews, Scotland.}{Jan 2015}&\\
+\talk{Catolica Workshop.  The Ohio State University. Columbus, OH.}{May 2014}&\\
+\talk{Spitz Summer Institute, planetarium workshop/training. Spitz Inc. Chadds Ford, PA.}{July 2013}&\\
+\\
+%verbose verseion
+%\begin{enumerate}[noitemsep,label=\arabic*.]
+%\item \talk{2017 March 3: Hayes Research Forum. The Ohio State University. Columbus, OH.}
+%\item \talk{2017 February 27: AGN Research Group Meeting.  Space Telescope and Science Institute. Baltimore, MD.}
+%\item \talk{2017 January 11: MIT Kavli Institute Research Lunch. Cambridge, MA.}
+%\item \talk{2017 January 7: Meeting of the American Astronomical Society \#229. Grapevine, TX.}
+%\item \stepcounter{confs}\theconfs.\,\,2016 July. AGN STORM Workshop. Reykjavik, Iceland.
+%\item \talk{2016 June 21: Center for Cosmology and Astroparticle Physics Seminar Series, The Ohio State University. Columbus, OH.}
+%\item \talk{2016 May 2: Great Lakes Quasar Symposium, Western University. London, Ontario.}
+%\item \talk{2016 April 11: R. Narayan's Research Group Meeting, Harvard-Smithsonian Center for Astrophysics. Cambridge, MA.}
+%\item \talk{2016 April 1: Quasar Research Group Meeting,  Harvard-Smithsonian Center for Astrophysics. Cambridge, MA.}
+%\item \talk{2016 March 25: AGN Research Group Meeting.  Space Telescope and Science Institute. Baltimore, MD.}
+%\item \talk{2015 July: AGN STORM Workshop.  Columbus, OH.}
+%\item \talk{2015 January: Meeting of the American Astronomical Society \#225. Seattle, WA.}
+%\item \stepcounter{confs}\theconfs.\,\,2014 July:  AGN Research Retreat.  University of St. Andrews.  St. Andrews, Scotland.
+%\item \talk{2014 May: Catolica Workshop.  The Ohio State University. Columbus, OH.}
+%\item \stepcounter{confs}\theconfs.\,\,2013 July:  Spitz Summer Institute, planetarium workshop/training. Spitz Inc. Chadds Ford, PA.\\
+\underline{\smash{\textbf{Mentoring/}}}  &  \textbf{Mentor} for MIT Graduate Students:\\
+\underline{\smash{\textbf{Teaching}}}  
+  &\phantom{aa}\gradstudent{Akshata Krishnamurthy}{Noise Floor in of the TESS Detectors}{2019}\\
+  &\phantom{aa}\gradstudent{Rahul Jayaraman}{Searching for Transients in TESS FFIs}{2019} \\
+&  \textbf{Suporvisor} through MIT Undergraduate Research Opportunity Program:\\
+ & \phantom{aa}\student{Nadia Dimitrova}{2017}\\
+ & \phantom{aa}\student{Ally Hong}{2018--present}\\
+ & \phantom{aa}\student{Jason Yang}{2019--present}\\
+&\textbf{Graduate Teaching Associate}, The Ohio State University:\\
+&Graded exams, designed/hosted review sessions.
 \begin{compactitem}
 \item Autumn 2012: \hspace{2mm}Astro 2291,  Intro to Astronomy and Planets (calculus-based).
 \item Spring 2013: \hspace{4.8mm}Astro 1161,  Intro to Astronomy and the Solar System.
@@ -184,6 +223,17 @@ VERITAS ($\gamma$-ray observatory): &   7 nights& 2011   \\
 \begin{compactitem}
 \item 2009--2010:  St. John's College Junior-year Laboratory
 \end{compactitem}
+\\
+
+\underline{\smash{\textbf{Observing}}}\\\underline{\smash{\textbf{Experience}}} &  
+\begin{tabular}[t]{lrl}
+Total:&                                        119 nights& (81 queue, 38 classical)\\
+Large Binocular Telescope:&       54 nights& 2013-2016\\
+MDM 2.4m Hiltner:&                   24 nights& 2012-2015\\
+MDM 1.3m McGraw: &               18 nights& 2013-2014\\
+CTIO SMARTS 1.3m: &              16 nights& 2015\\
+VERITAS ($\gamma$-ray observatory): &   7 nights& 2011   \\ 
+\end{tabular}\\
 \\
 
 
