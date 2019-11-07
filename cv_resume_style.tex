@@ -19,7 +19,7 @@
 
 \newcolumntype{A}{ >{\raggedleft}p{0.03\textwidth}}
 \newcolumntype{a}{p{0.70\textwidth}}
-\newcolumntype{b}{ >{\raggedleft}p{0.2\textwidth}}
+\newcolumntype{b}{ >{\raggedleft}p{0.21\textwidth}}
 
 
 \newcolumntype{z}{p{1.0\textwidth}}
@@ -35,7 +35,7 @@
 \newcommand{\publication}[1]{ {\raggedright\stepcounter{pubs}\thepubs.\,\,#1\\}}
 
 %contirubted talk
-\newcommand{\talk}[2]{ \stepcounter{confs}\theconfs.  #1\hfill#2}
+\newcommand{\talk}[2]{ \begin{tabular}{Aab}\stepcounter{confs}\theconfs.&#1&#2\end{tabular}}
 \newcommand{\invite}[2]{ \begin{tabular}{Aab} \stepcounter{invites}\theinvites.  &#1&#2 \end{tabular}}
 \newcommand{\award}[2]{#1\hfill#2}
 
@@ -44,9 +44,7 @@
 >{\raggedright}p{0.25\textwidth}
 >{\raggedright}p{0.38\textwidth}
 >{\raggedleft}p{0.1\textwidth}} #1&#2&#3\end{tabular} }
-\newcommand{\student}[2]{\begin{tabular}{
->{\raggedright}p{0.56\textwidth}
->{\raggedleft}p{0.2\textwidth}} #1&#2\end{tabular}}
+\newcommand{\student}[2]{#1\hfill #2}
 %\newcommand{\talk}[2]{ \begin{tabular}{ab} #1 &#2 \end{tabular} }
 
 %compact lists
@@ -85,19 +83,18 @@
 
 \noindent MIT Kavli Institute for Astrophysics and Space Research \hfill Office: (617) 324 6404 \\
 77 Massachusetts Avenue, 37-535  \hfill faus@mit.edu\\
-Cambridge, MA 02139 \hfill space.mit.edu/\textasciitilde faus/
+Cambridge, MA 02139 \hfill space.mit.edu/home/faus/
 \\
 \\
 \underline{\textbf{Research Expertise}}\\
-Time Domain Astronomy, Supermassive Black Holes
+Time Domain Astronomy, Supermassive Black Holes, Astrophysical Transients
 \\
 \\
 \underline{\textbf{Current Position}} \\
 Reseach Scientist, \textbf{Massachusetts Institute of Technology,} Cambridge, MA \hfill 2017--present\\
 Responsibilities: \begin{compactitem}
-   \item Data Quality Assurance for NASA's TESS mission
+   \item Data Analysis and Quality Assurance for NASA's TESS mission
    \item Mission and Observation Planning for TESS
-   \item Software Development for TESS
    \item Original Research Programs
    \end{compactitem}	
 %%   \\
@@ -112,21 +109,22 @@ Responsibilities: \begin{compactitem}
   %%  \\
 \underline{\textbf{Education}}    \\
 Ph.D., Astronomy, The Ohio State University;  Advisor:  Prof. Bradley Peterson \hfill 2017\\
-M.S.,  Astronomy, The Ohio State University \hfill 2014\\
-B.A., History of Math and Science, Philosophy, St. John's College, Santa Fe, NM\hfill 2011\\
+M.S.,  \,\,Astronomy, The Ohio State University \hfill 2014\\
+B.A., \,\,History of Math and Science, Philosophy, St. John's College, Santa Fe, NM\hfill 2011\\
 \\
 \noindent\underline{\textbf{Professional Experience}}\\ 
+ Data Release Notes for NASA's TESS mission, \textbf{lead author}.\hfill 2018--present\\
  Five \textbf{first author} papers accepted (147 citations). \\
  68 \textbf{papers} total,  15 minor publications.\\ %minor includes AAS abstracts, RNAAS, ATels, GCNs
 % & 12 \textbf{professional presentations} including 1 invited seminar.\\
 \textbf{Referee} for \textit{Nature}, leading astrophysics journals (\textit{Nature Astronomy}, \textit{ApJ},\\ \textit{MNRAS}, \textit{Astronomy \& Astrophysics}, \textit{PASP}), and
-   general journal \textit{Frontiers}.\\% in Astronomy and Space Science}.  \\
- \textbf{Chair and Organizer} for speciall session "TESS and Transient Science" at  AAS 235. \hfill January 2020\\
+   general journal \textit{Frontiers}.\hfill 2016--present\\% in Astronomy and Space Science}.  \\
+ \textbf{Chair and Organizer} for the special session "TESS and Transient Science" at  AAS 235. \hfill Jan 2020\\
   \textbf{Co-Chair} of LOC for the New England Regional Quasar and AGN Meeting\hfill May 2019\\
-   \textbf{Mentor} for 2 MIT Graduate Students and 2 MIT Undergraduates.\\
+   \textbf{Mentor} for 2 graduate students and 3 undergraduates.\hfill 2017--present\\
 \\
 \noindent\underline{\textbf{Honors and Awards}}\\
-\award{NASA Silver Achievement Award for the TESS Mission}{Sept. 2019}\\
+\award{NASA Silver Achievement Award for the TESS Mission}{Sept 2019}\\
 \award{OSU Hayes Research Forum, 2nd place Oral Presentation}{March 2017} \\
 \award{OSU Markowitz Award for Excellence in Observational Astronomy}{2016--2017}\\
 \award{OSU Graduate School Presidential Fellow}{2016--2017}\\
@@ -157,14 +155,15 @@ B.A., History of Math and Science, Philosophy, St. John's College, Santa Fe, NM\
 %\end{enumerate}
 \noindent\underline{\textbf{Presentations}}\\
 \textbf{Invited Talks}\\
-\talk{Northrop Grumman Innovation Systems, Sterling, VA.}{April 2019}\\
+\talk{AAS 235 Special Session "TESS and Transient Science." Honolulu, HI.}{Jan 2020}\\
+\talk{"One Year for TESS:  Early Findings and the Future Ahead."  Northrop Grumman Innovation Systems, Sterling, VA.}{April 2019}\\
 \talk{CCAP Summer Seminar, The Ohio State University. Columbus, OH.}{June 2016}\\
-\talk{Harvard-Smithsonian Center for Astrophysics. Cambridge, MA.}{Nov 2016}\\
-\textbf{TESS}\\
+\talk{Galaxy and Cosmology Seminar.  Harvard-Smithsonian Center for Astrophysics. Cambridge, MA.}{Nov 2016}\\
+\textbf{TESS Contributed Research}\\
 \talk{TESS Science Conference.  MIT.  Cambridge, MA.}{Aug 2019}\\
 \talk{Meeting of the American Astronomical Society \#233. Seattle, WA.}{Jan 2019}\\
 \talk{TESS Science Meeting. MIT. Cambridge, MA.}{Oct. 2018}\\
-\textbf{AGN}\\
+\textbf{AGN Contributed Research}\\
 \talk{NERQUAM 2019.  MIT. Cambridge, MA.}{May 2019}\\
 \talk{AGN STORM Research Meeting.  Atlanta, GA.}{Aug 2017}\\
 \talk{Hayes Research Forum. The Ohio State University. Columbus, OH.}{March 2017}\\
@@ -173,7 +172,7 @@ B.A., History of Math and Science, Philosophy, St. John's College, Santa Fe, NM\
 \talk{Meeting of the American Astronomical Society \#229. Grapevine, TX.}{Jan 2017}\\
 \talk{AGN STORM Workshop. Reykjavik, Iceland.}{July 2016}\\
 \talk{Great Lakes Quasar Symposium, Western University. London, Ontario.}{May 2016}\\
-\talk{R. Narayan's Research Group Meeting, Harvard-Smithsonian Center for Astrophysics. Cambridge, MA.}{April 2016}\\
+\talk{Narayan Research Group, Harvard-Smithsonian Center for Astrophysics. Cambridge, MA.}{April 2016}\\
 \talk{Quasar Research Group Meeting,  Harvard-Smithsonian Center for Astrophysics. Cambridge, MA.}{April 2016}\\
 \talk{AGN Research Group Meeting.  Space Telescope and Science Institute. Baltimore, MD.}{March 2016}\\
 \talk{AGN STORM Workshop.  Columbus, OH.}{July 2015}\\
@@ -199,32 +198,33 @@ B.A., History of Math and Science, Philosophy, St. John's College, Santa Fe, NM\
 %\item \stepcounter{confs}\theconfs.\,\,2014 July:  AGN Research Retreat.  University of St. Andrews.  St. Andrews, Scotland.
 %\item \talk{2014 May: Catolica Workshop.  The Ohio State University. Columbus, OH.}
 %\item \stepcounter{confs}\theconfs.\,\,2013 July:  Spitz Summer Institute, planetarium workshop/training. Spitz Inc. Chadds Ford, PA.\\
-\begin{longtable}{LR}
-\underline{\smash{\textbf{Mentoring/}}}  &  \textbf{Mentor} for MIT Graduate Students:\\
-\underline{\smash{\textbf{Teaching}}}  
-  &\phantom{aa}\gradstudent{Akshata Krishnamurthy}{Noise Floor in of the TESS Detectors}{2019}\\
-  &\phantom{aa}\gradstudent{Rahul Jayaraman}{Searching for Transients in TESS FFIs}{2019} \\
-&  \textbf{Suporvisor} through MIT Undergraduate Research Opportunity Program:\\
- & \phantom{aa}\student{Nadia Dimitrova}{2017}\\
- & \phantom{aa}\student{Ally Hong}{2018--present}\\
- & \phantom{aa}\student{Jason Yang}{2019--present}\\
-&\textbf{Graduate Teaching Associate}, The Ohio State University:\\
-&Graded exams, designed/hosted review sessions.
-\begin{compactitem}
-\item Autumn 2012: \hspace{2mm}Astro 2291,  Intro to Astronomy and Planets (calculus-based).
-\item Spring 2013: \hspace{4.8mm}Astro 1161,  Intro to Astronomy and the Solar System.
-\end{compactitem}\textbf{Head Laboratory Assistant}, St. John's College:\\
-&Demonstrated/guided classroom practica, developed/documented experiments.
-\begin{compactitem}
-\item 2010--2011:  St. John's College Senior-year Laboratory
-\end{compactitem}\textbf{Laboratory Assistant}, St. John's College:\\
-&Demonstrated/guided classroom practica.
-\begin{compactitem}
-\item 2009--2010:  St. John's College Junior-year Laboratory
-\end{compactitem}
-\\
+\underline{\textbf{Mentoring and Teaching}}\\
+\textbf{Mentor} for MIT Graduate Students:\hfill2019--present\\
+\indent Guided dissertations, outlined and managed research projects.\\
+ \indent Akshata Krishnamurthy (2019), Rahul Jayaraman (2019--present)\\
+\textbf{Supervisor} through MIT Undergraduate Research Opportunity Program:\hfill2017--present\\
+\indent Designed and managed research/programming projects, instructed students in \\
+\indent best research practices.\\
+\indent Nadia Dimitrova (2017), Ally Hong (2018--present), Jason Yang (2019--present)\\
+\textbf{Graduate Teaching Associate}, The Ohio State University:\hfill2012--2013\\
+\indent Graded exams, designed and lead review sessions.
+\begin{itemize}[nosep, label=\textbullet]
+\item Astro 2291,  Intro to Astronomy and Planets (calculus-based, Autumn 2012)
+\item Astro 1161,  Intro to Astronomy and the Solar System (Spring 2013)
+\end{itemize}
+\textbf{Head Laboratory Assistant}, St. John's College:\hfill2010--2011\\
+\indent Supervised and demonstrated classroom practica, developed and documented\\
+ \indent  pedagogical experiments.\\
+%\begin{itemize}[nosep,label=\textbullet]
+%\item St. John's College Senior-year Laboratory \hfill 
+%\end{itemize}
+\textbf{Laboratory Assistant}, St. John's College:\hfill2009--2010\\
+\indent Supervised and demonstrated classroom practica.\\
+%\begin{itemize}[nosep,after=\vspace{\baselineskip},label=\textbullet]
+%\item St. John's College Junior-year Laboratory\hfill 
+%\end{itemize}
 
-\underline{\smash{\textbf{Observing}}}\\\underline{\smash{\textbf{Experience}}} &  
+\noindent \underline{\textbf{Observing Experience}}\\
 \begin{tabular}[t]{lrl}
 Total:&                                        119 nights& (81 queue, 38 classical)\\
 Large Binocular Telescope:&       54 nights& 2013-2016\\
@@ -232,26 +232,31 @@ MDM 2.4m Hiltner:&                   24 nights& 2012-2015\\
 MDM 1.3m McGraw: &               18 nights& 2013-2014\\
 CTIO SMARTS 1.3m: &              16 nights& 2015\\
 VERITAS ($\gamma$-ray observatory): &   7 nights& 2011   \\ 
-\end{tabular}\\
+\end{tabular}
 \\
 
 
-\underline{\smash{\textbf{Selected}}}\\\underline{\smash{\textbf{Outreach}}} 
-&\textbf{OSU Planetarium:} Developed/wrote all or part the following shows:
-\begin{compactitem}
-\item 2013:  \textit{OSU Planetarium Grand Reopening, The Sky Tonight.}
-\item 2014:  \textit{Journey through the Solar System.}
-\item 2015:  \textit{The Autumn Sky:  Hidden Treasures.}
-\end{compactitem}
-\noindent Presented 2-4 planetarium shows per month (Over 100 shows from 2013-2016).\\
-&Wickliffe Elementary Space Day (2013 January 18).\\
-&Bailey Elementary Astronomy mini-course (2013 March 15).\\
-&4-H Science Saturday (2013 April 6).\\
-&Blendon Middle School Career Day (2013 May 14).\\
-&Hosted a high school student for 1 day (2014 May 28).\\
-&Upper Arlington Library Summer Astronomy Series (June 2014, 2015, 2016).\\
-\end{longtable}
-%\clearpage
+\noindent\underline{\textbf{Selected Outreach}}\\
+Upper Arlington Library Summer Astronomy Series \hfill June 2014, 2015, 2016\\
+Presented 2-4 planetarium shows per month. \hfill 2013-2016\\
+\textbf{OSU Planetarium:} Wrote the following shows:\hfill2013--2015
+\begin{itemize}[nosep,label=\textbullet]
+\item \textit{OSU Planetarium Grand Reopening, The Sky Tonight.}
+\item \textit{Journey through the Solar System.}
+\item \textit{The Autumn Sky:  Hidden Treasures.}
+\end{itemize}
+%verbose version
+%Wickliffe Elementary Space Day (2013 January 18).\\
+%Bailey Elementary Astronomy mini-course (2013 March 15).\\
+%4-H Science Saturday (2013 April 6).\\
+%Blendon Middle School Career Day (2013 May 14).\\
+%Hosted a high school student for 1 day (2014 May 28).\\
+%Upper Arlington Library Summer Astronomy Series (June 2014, 2015, 2016).\\
+\noindent Hosted a high school student for 1 day \hfill May 2014\\
+Blendon Middle School Career Day \hfill  May 2013\\
+4-H Science Saturday \hfill April 2013\\
+Bailey Elementary Astronomy mini-course \hfill March 2013\\
+Wickliffe Elementary Space Day \hfill  Jan 2013\\
 
 \begin{center}
 \huge\textbf{Publications}
