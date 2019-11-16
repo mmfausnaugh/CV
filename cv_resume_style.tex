@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 
 
  \usepackage{setspace,array,
@@ -21,6 +21,8 @@
 \newcolumntype{a}{p{0.70\textwidth}}
 \newcolumntype{b}{ >{\raggedleft}p{0.21\textwidth}}
 
+\newcolumntype{c}{p{0.93\textwidth}}
+
 
 \newcolumntype{z}{p{1.0\textwidth}}
 \newcommand\Tstrut{\rule{0pt}{2.6ex}}       % top strut
@@ -32,7 +34,8 @@
 \newcounter{confs}
 
 %pub entry
-\newcommand{\publication}[1]{ {\raggedright\stepcounter{pubs}\thepubs.\,\,#1\\}}
+%\newcommand{\publication}[1]{ {\raggedright\stepcounter{pubs}\thepubs.\,\,#1\\}}
+\newcommand{\publication}[1]{\begin{tabular}{Ac}\stepcounter{pubs}\thepubs.&#1\end{tabular}}
 
 %contirubted talk
 \newcommand{\talk}[2]{ \begin{tabular}{Aab}\stepcounter{confs}\theconfs.&#1&#2\end{tabular}}
@@ -91,7 +94,7 @@ Time Domain Astronomy, Supermassive Black Holes, Astrophysical Transients
 \\
 \\
 \underline{\textbf{Current Position}} \\
-Reseach Scientist, \textbf{Massachusetts Institute of Technology,} Cambridge, MA \hfill 2017--present\\
+Reseach Scientist, Massachusetts Institute of Technology \hfill 2017--present\\
 Responsibilities: \begin{compactitem}
    \item Data Analysis and Quality Assurance for NASA's TESS mission
    \item Mission and Observation Planning for TESS
@@ -113,16 +116,17 @@ M.S.,  \,\,Astronomy, The Ohio State University \hfill 2014\\
 B.A., \,\,History of Math and Science, Philosophy, St. John's College, Santa Fe, NM\hfill 2011\\
 \\
 \noindent\underline{\textbf{Professional Experience}}\\ 
- Five \textbf{first author} papers accepted (147 citations). \\
- 68 \textbf{papers} total,  15 minor publications.\\ %minor includes AAS abstracts, RNAAS, ATels, GCNs
+ Six \textbf{first author} papers accepted (147 citations) \\
+ 68 \textbf{papers} total,  15 minor publications\\ %minor includes AAS abstracts, RNAAS, ATels, GCNs
 % & 12 \textbf{professional presentations} including 1 invited seminar.\\
- Data Release Notes for NASA's TESS mission, \textbf{lead author}.\hfill 2018--present\\
+ Data Release Notes for NASA's TESS mission, \textbf{lead author}\hfill 2018--present\\
+Authored a \textit{Nature Astronomy} "News and Views" article (unrefereed) \hfill 2019\\
 \textbf{Referee} for \textit{Nature}, leading astrophysics journals (\textit{Nature Astronomy}, \textit{ApJ},\\ 
 \indent \textit{MNRAS}, \textit{Astronomy \& Astrophysics}, \textit{PASP}), and
-   general journal \textit{Frontiers}.\hfill 2016--present\\% in Astronomy and Space Science}.  \\
- \textbf{Chair and Organizer} for the special session "TESS and Transient Science" at  AAS 235. \hfill Jan 2020\\
+   general journal \textit{Frontiers}\hfill 2016--present\\% in Astronomy and Space Science}.  \\
+ \textbf{Chair and Organizer} for the special session "TESS and Transient Science" at  AAS 235 \hfill Jan 2020\\
   \textbf{Co-Chair} of LOC for the New England Regional Quasar and AGN Meeting\hfill May 2019\\
-   \textbf{Mentor} for 2 graduate students and 3 undergraduates.\hfill 2017--present\\
+   \textbf{Mentor} for 2 graduate students and 3 undergraduates\hfill 2017--present\\
 \\
 \noindent\underline{\textbf{Honors and Awards}}\\
 \award{NASA Silver Achievement Award for the TESS Mission}{Sept 2019}\\
@@ -234,8 +238,7 @@ B.A., \,\,History of Math and Science, Philosophy, St. John's College, Santa Fe,
 Transiting Exoplanet Survey Satellite\\
 \indent Monthly mission planning (2018--present):
 \begin{itemize}[nosep,label=\textbullet]
-\item Selected 20,000 targets for transiting planet search
-\item Selected 1,900 guide stars
+\item Selected targets and guide stars
 \item Performed quality checks, diagnostics, and engineering validation
 \item Assessed and reported guiding performance and pointing stability
 \end{itemize}
@@ -253,9 +256,11 @@ VERITAS ($\gamma$-ray observatory): &   7 nights& 2011   \\
 
 
 \noindent\underline{\textbf{Selected Outreach}}\\
+Guided tour of the MIT TESS Payload Operations Center\hfill July 2018\\
+AAS 231 Hyperwall Presentation \hfill Jan 2018\\
 Upper Arlington Library Summer Astronomy Series \hfill June 2014, 2015, 2016\\
 Presented 2-4 planetarium shows per month. \hfill 2013-2016\\
-\textbf{OSU Planetarium:} Wrote the following shows:\hfill2013--2015
+OSU Planetarium: Wrote the following shows:\hfill2013--2015
 \begin{itemize}[nosep,label=\textbullet]
 \item \textit{OSU Planetarium Grand Reopening, The Sky Tonight.}
 \item \textit{Journey through the Solar System.}
@@ -269,167 +274,11 @@ Presented 2-4 planetarium shows per month. \hfill 2013-2016\\
 %Hosted a high school student for 1 day (2014 May 28).\\
 %Upper Arlington Library Summer Astronomy Series (June 2014, 2015, 2016).\\
 \noindent Hosted a high school student for 1 day \hfill May 2014\\
-Blendon Middle School Career Day \hfill  May 2013\\
+%Blendon Middle School Career Day \hfill  May 2013\\
 4-H Science Saturday \hfill April 2013\\
-Bailey Elementary Astronomy mini-course \hfill March 2013\\
+%Bailey Elementary Astronomy mini-course \hfill March 2013\\
 Wickliffe Elementary Space Day \hfill  Jan 2013\\
 
-\begin{center}
-\huge\textbf{Publications}
-\end{center}
-
-
-%\vspace{2em}
-%{\raggedright
-%\lipsum[100]}
-%
-%\vspace{2em}
-%\lipsum[100]
-
-\begin{longtable}{LR}
-
-\underline{\smash{\textbf{First Author}}}
-&%{\raggedright(\stepcounter{pubs}\thepubs. Distributed to co-authors for comments 2016~Oct.~17)\\
-%``Continuum Reverberation Mapping of the Accretion Disks in Two \\Seyfert 1  Galaxies''\\
-%\textbf{M.~M.~Fausnaugh} et al. (71 authors)\\
-%Preprint available:  www.astronomy.ohio-state.edu/\textasciitilde fausnaugh/RMdisks\\}
-\publication{``Continuum Reverberation Mapping of the Accretion Disk in Two \\Seyfert 1  Galaxies''\\
-\textbf{M.~M.~Fausnaugh} et al. (71 authors), \apj, 854:107 (2018).  }
-\\
-&\publication{``Reverberation Mapping of Optical Emission Lines in Five Active Galaxies''\\
-\textbf{M.~M.~Fausnaugh} et al. (71 authors), \apj, 840:97 (2017).}
-\\
-&\publication{``A New Approach to the Internal Calibration of Reverberation \\Mapping Spectra''\\
-\textbf{M.~M.~Fausnaugh} (single author), \pasp, 129:972 (2017).  Includes first video abstract ever published by PASP.}
-\\
-&\publication{``Space Telescope and Optical Reverberation Mapping Project. III. Optical Continuum Emission and Broad-Band Time Delays in NGC 5548''\\
-\textbf{M.~M.~Fausnaugh} et al. (99 authors), \apj, 821:56 (2016).}
-\\
-& \publication{``The Cepheid distance to the maser-host galaxy NGC 4258: studying systematics with the Large Binocular Telescope''\\
-\textbf{M.~M.~Fausnaugh}, C.~S.~Kochanek,  J.~R.~Gerke, L.~M.~Macri, A.~G.~Riess, K.~Z.~Stanek, \mnras, 450:3597 (2015).}
-\\
-
-
-
-
-\underline{\smash{\textbf{Major}}}\\\underline{\smash{\textbf{Contributing}}}\\\underline{\smash{\textbf{Author}}}
-&\publication{``Space Telescope and Optical Reverberation Mapping Project. V. Optical Spectroscopic Campaign and Emission-Line Analysis for NGC 5548'',
-  L.~Pei, \textbf{M.~M.~Fausnaugh}, and 152 others, \apj, 837:131 (2017).}
-\\
-&\publication{``Swift Monitoring of NGC 4151: Evidence for a Second X-ray/UV Reprocessing'',
-R.~Edelson, J.~Gelbord, E.~Cackett, C.~Done, \textbf{M.~M.~Fausnaugh}, and 37 others \apj, 840:41 (2017).}
-\\
-&\publication{``Spitzer Space Telescope Measurements of Dust Reverberation Lags in the Seyfert 1 Galaxy NGC 6418'', 
-  B.~Vazquez, P.~Galianni, M.~Richmond, A.~Robinson, D.~J.~Axon, K.~Horne, T.~Almeyda, \textbf{M.~M.~Fausnaugh}, and 18 others, \apj, 801:127 (2015).}
-\\
-
-
-\underline{\smash{\textbf{Contributing}}}\\\underline{\smash{\textbf{Author}}}
-&\publication{``Space Telescope and Optical Reverberation Mapping
-  Project. VII. Understanding the Ultraviolet Anomaly in NGC 5548 with
-  X-Ray Spectroscopy'', Mathur,~S. et al. (150 authors, including
-  \textbf{M.~M.~Fausnaugh}) \apj, 846:55 (2017).}
-\\
-&\publication{``Space Telescope and Optical Reverberation Mapping
-  Project. VI. Reverberating Disk Models for NGC\,5548'', D.~Starkey,
-  K.~Horne, \textbf{M.~M.~Fausnaugh}, and 96 others, \apj, 835:65
-  (2017).}  \\ &\publication{``Space Telescope and Optical
-  Reverberation Mapping Project. IV. Anomalous behavior of the broad
-  ultraviolet emission lines in NGC 5548'', M.~R.~Goad et al. (102
-  authors, including \textbf{M.~M.~Fausnaugh}), \apj, 824:11 (2016).}
-\\
-&\publication{``Space Telescope and Optical Reverberation Mapping
-  Project. II. Swift and HST Reverberation Mapping of the Accretion
-  Disk of NGC 5548'', R.~Edelson et al. (50 authors, including
-  \textbf{M.~M.~Fausnaugh}), \apj, 806:129 (2015).}
-\\
-&\publication{``Space Telescope and Optical Reverberation Mapping
-  Project. I. Ultraviolet Observations of the Seyfert 1 Galaxy NGC
-  5548 with the Cosmic Origins Spectrograph on Hubble Space
-  Telescope'', G.~ De~Rosa et al. (50 authors, including
-  \textbf{M.~M.~Fausnaugh}), \apj, 806:128 (2015).}
-\\
-&
-\publication{``Swift/UVOT Grism Monitoring of NGC 5548
-  in 2013: An Attempt at MgII Reverberation Mapping'', E.~M.~Cackett,
-  K.~G\"ultekin, M.~C.~Bentz, \textbf{M.~M.~Fausnaugh},
-  B.~M.~Peterson, J.~Troyer, M.~Vestergaard, \apj, 810:86 (2015).}
-\\
-&\publication{``XMM-Newton Observations of the Peculiar Cataclysmic
-  Variable Lanning 386: X-ray evidence for a Magnetic Primary'',
-  M.~R.~Kennedy, P.~Callanan, P.~M.~Garnavich,
-  \textbf{M.~M.~Fausnaugh}, J.~C.~Zinn, \mnras, 466:2202
-  (2017).}\\ &\publication{``Ground-based Parallax Confirmed by
-  Spitzer: Binary Microlensing Event MOA-2015-BLG-020'', T.~Wang, et
-  al. (87 authors, including \textbf{M.~M.~Fausnaugh}, \apj,
-  845:129(2017).}
-\\
-&\publication{``OGLE-2015-BLG-1482L: The First Isolated Low-mass
-  Microlens in the Galactic Bulge'', S.~J.~Chung (42 authors,
-  including \textbf{M.~M.~Fausnaugh}), \apj, 838:154 (2017).}
-\\
-&\publication{``Toward a  Galactic Distribution
-  of Planets. I. Methodology \& Planet Sensitivities of the 2015
-  High-Cadence Spitzer Microlens Sample'', W.~Zhu et al. (28 authors,
-  including \textbf{M.~M.~Fausnaugh}), submitted to \apj\ 2017 January
-  18. }
-\\
-&\publication{``OGLE-2015-BLG-0196: Ground-based
-  Gravitational Microlens Parallax Confirmed by Space-based
-  Observation'', C.~Han et al. (26 authors, including
-  \textbf{M.~M.~Fausnaugh}), \apj, 834:82 (2017).}
-\\
-&\publication{``First simultaneous microlensing observations by two
-  space telescopes: Spitzer \& Swift reveal a brown dwarf in event
-  OGLE-2016-BLG-1319'', Y.~Shvartzvald et al. (94 authors, including
-  \textbf{M.~M.~Fausnaugh}), \apj, 831:183 (2016).}
-\\
-&\publication{``OGLE-2015-BLG-0479LA,B: Binary Gravitational
-  Microlens Characterized by Simultaneous Ground-based and Space-based
-  Observations'', C.~Han et al. (63 authors, including
-  \textbf{M.~M.~Fausnaugh}), \apj, 828:53 (2016).}
-\\
-&\publication{``The Spitzer Microlensing Program as a Probe for
-  Globular Cluster Planets: Analysis of OGLE-2015-BLG-0448'',
-  P.~Radoslaw et al. (92 authors, including \textbf{M.~M.~Fausnaugh}),
-  \apj, 823:63 (2016).}
-\\
-&\publication{``Spitzer Observations of
-  OGLE-2015-BLG-1212 Reveal a New Path to Breaking Strong Microlens
-  Degeneracies'', V.~Bozza et al. (92 authors, including
-  \textbf{M.~M.~Fausnaugh}), \apj, 820:79 (2016).}
-\\
-&\publication{``Spitzer Microlens Measurement of a Massive Remnant
-  in a Well-Separated Binary'', Y.~ Shvartzvald et al. (66 authors,
-  including \textbf{M.~M.~Fausnaugh}), \apj, 814:111 (2015).}
-\\
-&\publication{``Spitzer IRAC Photometry for Time Series in Crowded
-  Fields'', S.~ Calchi~ Novati et al. (25 authors, including
-  \textbf{M.~M.~Fausnaugh}), \apj, 814:92 (2015).}
-\\
-&\publication{``The Typecasting of Active Galactic Nuclei: Mrk 590
-  no Longer Fits the Role'', K.~D.~Denney et al. (12 authors,
-  including \textbf{M.~M.~Fausnaugh}), \apj, 796:134 (2014).}
-\\
-&\publication{``SN 2012au: A Golden Link between Superluminous
-  Supernovae and Their Lower-luminosity Counterparts'',
-  D.~Milisavlejic et al. (29 authors, including
-  \textbf{M.~M.~Fausnaugh}), \apj, 770:L38 (2013).}  \\
-
-
-\underline{\smash{\textbf{Minor}}}\\\underline{\smash{\textbf{Publications}}}& \stepcounter{pubs}\thepubs--\addtocounter{pubs}{6}\thepubs.\,\,Seven \textit{Astronomer's Telegrams} with the ASAS-SN research group (\#5102, \#5110, \#6143, \#6158, \#8352, \#8356, \#9146, unrefereed, 2013--2016).\\
-\\
-&\publication{``TESS Data Processing and Quick-look Pipeline'', \textbf{M.~M.~Fausnaugh}; Xu Huang; Ana Glidden; Natalia Guerrero; TESS Science Office, Meeting of the American Astronomical Society \#231 (2018).}
-\\
-&\publication{``Reverberation Mapping of AGN Accretion Disks'',  
-\textbf{M.~M.~Fausnaugh}, Meeting of the American Astronomical Society \#229 (2017).}
-\\
-&\publication{``AGN Space Telescope and Optical Reverberation Mapping Project II. Ultraviolet and Optical Continuum Analysis'',  
-\textbf{M.~M.~Fausnaugh}, Meeting of the American Astronomical Society \#225 (2015).}
-\\
-
-\end{longtable}
-
-
+\input{publist_input2}
 
 \end{document}
