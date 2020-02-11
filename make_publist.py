@@ -160,7 +160,7 @@ minor_pub = ['Fausnaugh2019',
 
 headers = {'\\noindent\\underline{\\textbf{First Author}}\\\\\n':first_author,
            ('\\\\\\\\\\noindent\\underline{'
-            '\\textbf{Major Author}}\\\\\n'
+            '\\textbf{Major Contributing Author}}\\\\\n'
             '\\textbf{Contributed major analysis or reduced data}\\\\\n'):major_author,
            '\\\\\\\\\\noindent\\underline{\\textbf{Contributing Author}}\\\\\n':[],
            ('\\noindent\\textbf{'
